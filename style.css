@@ -1,1 +1,164 @@
-body {\n    font-family: Arial, sans-serif;\n    background-color: #f0f0f0;\n    color: #333;\n    text-align: center;\n    padding-top: 50px;\n}\nh1 {\n    color: #0056b3;\n}
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background-color: #0056b3; /* Deep Blue */
+    color: #fff;
+    padding: 1rem 0;
+    border-bottom: 3px solid #e67e22; /* Orange accent */
+}
+
+header .logo {
+    float: left;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+}
+
+header nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #e67e22;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1500x800/0056b3/ffffff?text=Sri+Lanka+Landscape') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    font-family: 'Merriweather', serif;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e67e22; /* Orange */
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+/* Content Sections */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0056b3;
+    font-family: 'Merriweather', serif;
+}
+
+.about-sri-lanka, .culture {
+    background-color: #fff;
+}
+
+.destinations {
+    background-color: #e0eaf4; /* Light blue */
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.destination-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.destination-item:hover {
+    transform: translateY(-5px);
+}
+
+.destination-item h3 {
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #003366; /* Darker Blue */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 30px;
+}
